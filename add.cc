@@ -6,7 +6,7 @@ class Addition
     public:
     Addition(int n1, int n2):num1(n1), num2(n2){}
 
-    int add()
+    int add() const
     {
         return num1+num2;
     }
@@ -18,6 +18,6 @@ class Addition
 int main()
 {
     Addition a(45, 67);
-    std::cout<<a.add();
+    std::cout<< a.add() << std::endl;
     return 0;
 }
